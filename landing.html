@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .feature {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+  
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to our Landing Page</h1>
+        <p>Your destination for amazing content!</p>
+    </div>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="feature">
+                <img src="https://img.icons8.com/3d-fluency/94/event-accepted-tentatively.png" alt="Feature 1">
+                <h2>To Do App</h2>
+                <p>Discover the incredible benefits of ToDo App</p>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <p>Ready to get started?</p>
+            <button id="btn" >Start</button>
+        </div>
+    </div>
+    <script>
+
+        document.getElementById("btn").addEventListener("click", function(){
+            window.location.href = "todo.html";
+        });
+    </script>
+</body>
+</html>
